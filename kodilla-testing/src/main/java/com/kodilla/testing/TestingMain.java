@@ -1,5 +1,6 @@
 package com.kodilla.testing;
 
+import com.kodilla.testing.user.SimpleUser;
 import com.kodilla.testing.calculator.Calculator;
 
 public class TestingMain {
@@ -11,12 +12,7 @@ public class TestingMain {
         int addResult = 10 + 5;
         int subtractResult = 10 - 5;
 
-        if (addResult == calc.add(10, 5)) {
-            System.out.println("test OK");
-        } else {
-            System.out.println("Error!");
-        }
-        if (subtractResult == calc.subtract(10, 5)) {
+        if (addResult == calc.add(10, 5) && subtractResult == calc.subtract(10, 5)) {
             System.out.println("test OK");
         } else {
             System.out.println("Error!");
