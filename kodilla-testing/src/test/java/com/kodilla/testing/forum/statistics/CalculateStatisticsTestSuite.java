@@ -31,7 +31,7 @@ public class CalculateStatisticsTestSuite {
     @Test
     void test0Posts() {
         // Given
-        CalculateStatistics calculateStatistics = new CalculateStatistics(StatisticsMock);
+        CalculateStatistics calculateStatistics = new CalculateStatistics();
         int noOfPosts = 0;
         List<String> listOfUsers = generateListOfUsers(5);
         int noOfComments = 50;
@@ -53,7 +53,7 @@ public class CalculateStatisticsTestSuite {
     @Test
     void test1000Posts() {
      // Given
-     CalculateStatistics calculateStatistics = new CalculateStatistics(StatisticsMock);
+     CalculateStatistics calculateStatistics = new CalculateStatistics();
      int noOfPosts = 1000;
      List<String> listOfUsers = generateListOfUsers(5);
      int noOfComments = 200;
@@ -75,7 +75,7 @@ public class CalculateStatisticsTestSuite {
     @Test
     void test0Comments() {
         // Given
-        CalculateStatistics calculateStatistics = new CalculateStatistics(StatisticsMock);
+        CalculateStatistics calculateStatistics = new CalculateStatistics();
         int noOfPosts = 100;
         List<String> listOfUsers = generateListOfUsers(5);
         int noOfComments = 0;
@@ -97,7 +97,7 @@ public class CalculateStatisticsTestSuite {
     @Test
     void testLessCommentsThanPosts() {
         // Given
-        CalculateStatistics calculateStatistics = new CalculateStatistics(StatisticsMock);
+        CalculateStatistics calculateStatistics = new CalculateStatistics();
         int noOfPosts = 100;
         List<String> listOfUsers = generateListOfUsers(5);
         int noOfComments = 25;
@@ -118,7 +118,7 @@ public class CalculateStatisticsTestSuite {
     @Test
     void testMoreCommentsThanPosts() {
         // Given
-        CalculateStatistics calculateStatistics = new CalculateStatistics(StatisticsMock);
+        CalculateStatistics calculateStatistics = new CalculateStatistics();
         int noOfPosts = 10;
         List<String> listOfUsers = generateListOfUsers(5);
         int noOfComments = 25;
@@ -140,7 +140,7 @@ public class CalculateStatisticsTestSuite {
     @Test
     void test0Users() {
         // Given
-        CalculateStatistics calculateStatistics = new CalculateStatistics(StatisticsMock);
+        CalculateStatistics calculateStatistics = new CalculateStatistics();
         int noOfPosts = 10;
         List<String> listOfUsers = generateListOfUsers(0);
         int noOfComments = 25;
@@ -162,7 +162,7 @@ public class CalculateStatisticsTestSuite {
     @Test
     void test100Users() {
         // Given
-        CalculateStatistics calculateStatistics = new CalculateStatistics(StatisticsMock);
+        CalculateStatistics calculateStatistics = new CalculateStatistics();
         int noOfPosts = 10;
         List<String> listOfUsers = generateListOfUsers(100);
         int noOfComments = 25;

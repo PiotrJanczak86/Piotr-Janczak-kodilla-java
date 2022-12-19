@@ -8,11 +8,7 @@ public class CalculateStatistics {
     private double postsPerUser;
     private double commentsPerUser;
     private double commentsPerPost;
-    Statistics statistics;
 
-    public CalculateStatistics(Statistics statistics) {
-        this.statistics = statistics;
-    }
 
     public void calculateAdvStatistics (Statistics statistics){
         noOfUsers = statistics.usersNames().size();
