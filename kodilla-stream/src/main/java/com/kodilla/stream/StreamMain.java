@@ -2,6 +2,7 @@ package com.kodilla.stream;
 
 import com.kodilla.stream.forumuser.Forum;
 import com.kodilla.stream.forumuser.ForumUser;
+import com.kodilla.stream.mirror.Mirror;
 
 import java.time.LocalDate;
 import java.util.Map;
@@ -22,6 +23,9 @@ public class StreamMain {
         filteredMapOfUsers.entrySet().stream()
             .map(entry -> entry.getKey() + ": " + entry.getValue())
             .forEach(System.out::println);
+        
+        Mirror.mirroring("Adam");
+        
     }
 
 }
