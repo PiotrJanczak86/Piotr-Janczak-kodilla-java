@@ -163,7 +163,6 @@ class BoardTestSuite {
                 .map(d -> ChronoUnit.DAYS.between(d, LocalDate.now()))
                 .mapToDouble(d -> d)
                 .average().getAsDouble();
-
         //Then
         assertEquals(10.0, averageTime);
     }
