@@ -1,8 +1,6 @@
-package com.kodilla;
+package com.kodilla.good.patterns.challenges;
 
-import com.kodilla.good.patterns.challenges.MovieStore;
-
-public class Main {
+public class MovieStoreApplication {
     public static void main(String[] args) {
         MovieStore movieStore = new MovieStore();
         System.out.println(movieStore.allTitlesString());
