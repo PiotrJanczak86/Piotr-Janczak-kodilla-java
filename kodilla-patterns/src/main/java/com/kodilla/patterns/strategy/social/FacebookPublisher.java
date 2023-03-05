@@ -4,6 +4,6 @@ public final class FacebookPublisher implements SocialPublisher {
 
     @Override
     public String share(){
-        return ("User is most likely using Facebook");
+        return ("User shares something on Facebook");
     }
 }

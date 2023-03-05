@@ -3,6 +3,6 @@ package com.kodilla.patterns.strategy.social;
 public final class SnapchatPublisher implements SocialPublisher {
     @Override
     public String share(){
-        return("User is most likely using Snapchat");
+        return("User shares something on Snapchat");
     }
 }

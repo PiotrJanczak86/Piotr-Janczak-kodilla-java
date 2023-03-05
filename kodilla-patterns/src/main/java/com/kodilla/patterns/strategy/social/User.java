@@ -11,7 +11,7 @@ public class User {
     public void setSocialPublisher(SocialPublisher socialPublisher) {
         this.socialPublisher = socialPublisher;
     }
-    public String predict() {
+    public String sharePost() {
         return socialPublisher.share();
     }
 
