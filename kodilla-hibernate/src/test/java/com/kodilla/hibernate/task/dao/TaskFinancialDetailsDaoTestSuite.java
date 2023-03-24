@@ -25,6 +25,7 @@ class TaskFinancialDetailsDaoTestSuite {
         TaskFinancialDetails taskFinancialDetails =
                 new TaskFinancialDetails(new BigDecimal(115), false);
         taskFinancialDetailsDao.save(taskFinancialDetails);
+
         int id = taskFinancialDetails.getId();
 
         //When
@@ -34,6 +35,6 @@ class TaskFinancialDetailsDaoTestSuite {
         assertEquals(1, resultList.size());
 
         //CleanUp
-        taskFinancialDetailsDao.deleteById(id);
+        taskFinancialDetailsDao.deleteAll();
     }
 }
