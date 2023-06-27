@@ -19,7 +19,6 @@ public class TaskListDaoTestSuite {
     private static final String LISTNAME = "List name example";
     @Test
     void testFindByListName(){
-
         //Given
         TaskList taskList = new TaskList(LISTNAME, DESCRIPTION);
         taskListDao.save(taskList);
@@ -54,7 +53,7 @@ public class TaskListDaoTestSuite {
         //Then
         assertNotEquals(0, id);
 
-        //CleanUp
-        //taskListDao.deleteById(id);
+//        CleanUp
+        taskListDao.deleteById(id);
     }
 }
