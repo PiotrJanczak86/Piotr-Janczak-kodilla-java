@@ -12,6 +12,10 @@ import java.util.List;
                 "WHERE COMPANY_NAME LIKE CONCAT(:FIRSTCHARS, '%')",
         resultClass = Company.class
 )
+@NamedQuery(
+        name = "Company.retrieveCompanyWhichNameContains",
+        query = "FROM Company WHERE name LIKE CONCAT('%',:CHARS,'%')"
+)
 
 @Entity
 @Table(name = "COMPANIES")
